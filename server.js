@@ -3,6 +3,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
+const items = require('./routes/api/items');
+
 const app = express();
 
 // Express Static Middleware
@@ -16,6 +18,9 @@ mongoose.Promise = global.Promise
 mongoose.connect(process.env.MONGODB_URI)
     .then(() => console.log('MongoDB Connected...'))
     .catch(err => console.log(err));
+
+// Use Routes
+app.use('/api/items', items);
 
 // Server Config
 const port = process.env.PORT || 5000;
