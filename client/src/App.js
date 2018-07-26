@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 // COMPONENTS
 import AppNavbar from './components/AppNavbar';
+import ShoppingList from './components/ShoppingList';
 
 // STYLING
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,6 +13,7 @@ class App extends Component {
     return (
       <div className="App">
         <AppNavbar />
+        <ShoppingList />
       </div>
     );
   }
