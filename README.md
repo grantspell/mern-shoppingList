@@ -17,4 +17,4 @@
 * Axios
 * Bootstrap + Reactstrap
 * UUID [testing `items` before DB integration]
-* Other dependencies listed in `package.json` files 
+* Other dependencies listed in `package.json` files
